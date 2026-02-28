@@ -1,0 +1,7 @@
+Fermion ENS160 TVOC, eCO2, AQI: [breakout](https://www.dfrobot.com/product-2523.html) or [module](https://www.dfrobot.com/product-2526.html)
+Fermion SGP40 VOC: [breakout](https://www.dfrobot.com/product-2241.html) or [module](https://www.dfrobot.com/product-2251.html)
+[Fermion BMV080 PM AQI](https://www.dfrobot.com/product-3069.html)
+[SHARP GP2Y1010AU0F PM AQI](https://www.dfrobot.com/product-867.html)
+[Gravity AQI](https://www.dfrobot.com/product-2439.html)
+[Fermion methane sensor](https://www.dfrobot.com/product-2708.html)
+[Fermion odor sensor](https://www.dfrobot.com/product-2710.html)
