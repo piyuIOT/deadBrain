@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Info/Setups/Beautifying zsh.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Beautifying zsh"
+              "title": "README"
             }
           }
         ],
@@ -215,6 +215,7 @@
   },
   "active": "426f279966d60ca6",
   "lastOpenFiles": [
+    "Info/Setups/Beautifying zsh.md",
     "README.md",
     "Work.md",
     "BoneConduction Earphone.md",
@@ -259,7 +260,6 @@
     "Personel/teaching/assets/sound.pdf",
     "Personel/teaching/assets/motion.pdf",
     "Personel/teaching/assets/microorganism.pdf",
-    "Personel/teaching/Task.md",
-    "Personel/teaching/Lecture Outlines.md"
+    "Personel/teaching/Task.md"
   ]
 }

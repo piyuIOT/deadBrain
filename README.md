@@ -1,4 +1,4 @@
-This is [Pratham's](mailto:pratham.choudhary@zomato.com) notes for all tasks at Zomato IoT team.
+This is [Pratham's](mailto:pratham.choudhary@temple.com) notes for all tasks at Temple IoT team.
 > Only and only if the above mail id is out of service and its really important for you to reach out to the document creator, go to this mail -> [Pratham's personal mail](mailto:prathamchoudhary4@gmail.com)
 
 All instructions, until specified otherwise, are to be considered for MacOS only.
