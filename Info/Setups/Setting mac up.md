@@ -24,12 +24,11 @@
 	1. [Install google chrome](https://www.google.com/chrome/)
 3. In google chrome:
 	1. [Install and login Google drive desktop](https://support.google.com/drive/answer/10838124?sjid=8077116094041545744-NC#macos&zippy=%2Cinstall-on-macos)
-	2. [Login to admin.zomans.com](https://admin.zomans.com)
-	3. [Install and login obsidian](https://obsidian.md/download)
-	4. [Install and login whisperflow](https://wisprflow.ai/)
-	5. [Install and login whatsapp](https://www.whatsapp.com/download)
-	6. [Install and login slack](https://slack.com/intl/en-in/downloads/mac)
-	7. [Install and login VScode](https://code.visualstudio.com/download)
+	2. [Install and login obsidian](https://obsidian.md/download)
+	3. [Install and login whisperflow](https://wisprflow.ai/)
+	4. [Install and login whatsapp](https://www.whatsapp.com/download)
+	5. [Install and login slack](https://slack.com/intl/en-in/downloads/mac)
+	6. [Install and login VScode](https://code.visualstudio.com/download)
 4. In Terminal:
 	1. Install developer tools in mac (i just write `git` command and it shows option)
 	2. [Configure git](https://docs.github.com/en/get-started/git-basics/set-up-git), [add ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)

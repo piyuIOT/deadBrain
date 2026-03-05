@@ -25,8 +25,8 @@
 	23. ESP32S3 Waveshare power optimisation planning
 	24. ESP32S3 Waveshare CI-CD
 	25. ESP32S3 Waveshare OTA from CI-CD
-	26. ESP32S3 Waveshare
-	27. ESP32S3 Waveshare
+	26. ESP32S3 Exit from ZOMATO
+	27. ESP32S3 Entry to Eternals
 	28. **SATURDAY**
 - March
 	1. **SUNDAY**

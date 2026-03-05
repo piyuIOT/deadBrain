@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7050be5059ad1465",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BoneConduction Earphone.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BoneConduction Earphone"
-            }
-          },
-          {
             "id": "142c8c72e258aa75",
             "type": "leaf",
             "state": {
@@ -36,17 +22,27 @@
             }
           },
           {
-            "id": "426f279966d60ca6",
+            "id": "b8ee935c8fc0c2d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "feat in temple.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "feat in temple"
+            }
+          },
+          {
+            "id": "8dbf1d54c6a57df9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
@@ -107,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cf47fe1402cc5d2a",
@@ -213,12 +210,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "426f279966d60ca6",
+  "active": "8dbf1d54c6a57df9",
   "lastOpenFiles": [
-    "Info/Setups/Beautifying zsh.md",
-    "README.md",
-    "Work.md",
+    "feat in temple.md",
+    "Info/Setups/Setting mac up.md",
     "BoneConduction Earphone.md",
+    "Info/Setups/README.md",
+    "Info/Setups/Beautifying zsh.md",
+    "Info/Setups/Espressif IDF setup and use.md",
+    "Info/Setups/NightTab.md",
+    "Work.md",
+    "README.md",
     "Voice bot/CLAUDE.md",
     "Voice bot/power optimization/task.md",
     "Voice bot/power optimization/ESP32S3.md",
@@ -253,13 +255,8 @@
     "Personel/teaching/lectures/microorganism.md",
     "Personel/teaching/lectures/magnetism.md",
     "Personel/teaching/lectures/light.md",
-    "Personel/teaching/lectures/food-and-agriculture.md",
-    "Personel/teaching/lectures/electricity-and-magnetism.md",
-    "Personel/teaching/lectures/digestion-and-respiration.md",
-    "Personel/teaching/lectures/air-and-water.md",
     "Personel/teaching/assets/sound.pdf",
     "Personel/teaching/assets/motion.pdf",
-    "Personel/teaching/assets/microorganism.pdf",
-    "Personel/teaching/Task.md"
+    "Personel/teaching/assets/microorganism.pdf"
   ]
 }
