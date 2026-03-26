@@ -1,5 +1,3 @@
-
----
 # FUNDO
 - [ ] Break a water glass using haptic sensor vibration (record natural frequency for ACM by tapping the glass edge)
 - [ ] record heatbeat using imu
