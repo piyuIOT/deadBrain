@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "sentences_analysed": 1170,
+    "total_words": 9151,
+    "words_covered_by_cmudict": 9151,
+    "words_missing": 0,
+    "coverage_pct": 100.0,
+    "total_phoneme_tokens": 32379,
+    "unique_phonemes": 39
+  },
+  "groups": {
+    "Vowels": {
+      "total_count": 12012,
+      "pct_of_all": 37.1,
+      "phonemes": {
+        "/\u028c/": {
+          "cmu": "AH",
+          "count": 3146,
+          "pct": 9.72
+        },
+        "/\u026a/": {
+          "cmu": "IH",
+          "count": 1556,
+          "pct": 4.81
+        },
+        "/i/": {
+          "cmu": "IY",
+          "count": 978,
+          "pct": 3.02
+        },
+        "/\u0251/": {
+          "cmu": "AA",
+          "count": 783,
+          "pct": 2.42
+        },
+        "/\u025b/": {
+          "cmu": "EH",
+          "count": 783,
+          "pct": 2.42
+        },
+        "/\u025cr/": {
+          "cmu": "ER",
+          "count": 759,
+          "pct": 2.34
+        },
+        "/\u00e6/": {
+          "cmu": "AE",
+          "count": 727,
+          "pct": 2.25
+        },
+        "/\u0254/": {
+          "cmu": "AO",
+          "count": 623,
+          "pct": 1.92
+        },
+        "/u/": {
+          "cmu": "UW",
+          "count": 614,
+          "pct": 1.9
+        },
+        "/e\u026a/": {
+          "cmu": "EY",
+          "count": 587,
+          "pct": 1.81
+        },
+        "/a\u026a/": {
+          "cmu": "AY",
+          "count": 573,
+          "pct": 1.77
+        },
+        "/o\u028a/": {
+          "cmu": "OW",
+          "count": 454,
+          "pct": 1.4
+        },
+        "/a\u028a/": {
+          "cmu": "AW",
+          "count": 211,
+          "pct": 0.65
+        },
+        "/\u028a/": {
+          "cmu": "UH",
+          "count": 147,
+          "pct": 0.45
+        },
+        "/\u0254\u026a/": {
+          "cmu": "OY",
+          "count": 71,
+          "pct": 0.22
+        }
+      }
+    },
+    "Nasal consonants": {
+      "total_count": 3028,
+      "pct_of_all": 9.35,
+      "phonemes": {
+        "/n/": {
+          "cmu": "N",
+          "count": 1921,
+          "pct": 5.93
+        },
+        "/m/": {
+          "cmu": "M",
+          "count": 823,
+          "pct": 2.54
+        },
+        "/\u014b/": {
+          "cmu": "NG",
+          "count": 284,
+          "pct": 0.88
+        }
+      }
+    },
+    "Voiced stops": {
+      "total_count": 2455,
+      "pct_of_all": 7.58,
+      "phonemes": {
+        "/d/": {
+          "cmu": "D",
+          "count": 1412,
+          "pct": 4.36
+        },
+        "/b/": {
+          "cmu": "B",
+          "count": 671,
+          "pct": 2.07
+        },
+        "/g/": {
+          "cmu": "G",
+          "count": 372,
+          "pct": 1.15
+        }
+      }
+    },
+    "Unvoiced stops": {
+      "total_count": 4252,
+      "pct_of_all": 13.13,
+      "phonemes": {
+        "/t/": {
+          "cmu": "T",
+          "count": 2200,
+          "pct": 6.79
+        },
+        "/k/": {
+          "cmu": "K",
+          "count": 1213,
+          "pct": 3.75
+        },
+        "/p/": {
+          "cmu": "P",
+          "count": 839,
+          "pct": 2.59
+        }
+      }
+    },
+    "Liquids": {
+      "total_count": 3217,
+      "pct_of_all": 9.94,
+      "phonemes": {
+        "/r/": {
+          "cmu": "R",
+          "count": 1720,
+          "pct": 5.31
+        },
+        "/l/": {
+          "cmu": "L",
+          "count": 1497,
+          "pct": 4.62
+        }
+      }
+    },
+    "Glides": {
+      "total_count": 1352,
+      "pct_of_all": 4.18,
+      "phonemes": {
+        "/w/": {
+          "cmu": "W",
+          "count": 711,
+          "pct": 2.2
+        },
+        "/h/": {
+          "cmu": "HH",
+          "count": 400,
+          "pct": 1.24
+        },
+        "/j/": {
+          "cmu": "Y",
+          "count": 241,
+          "pct": 0.74
+        }
+      }
+    },
+    "Fricatives (sibilant)": {
+      "total_count": 3006,
+      "pct_of_all": 9.28,
+      "phonemes": {
+        "/s/": {
+          "cmu": "S",
+          "count": 1661,
+          "pct": 5.13
+        },
+        "/z/": {
+          "cmu": "Z",
+          "count": 1050,
+          "pct": 3.24
+        },
+        "/\u0283/": {
+          "cmu": "SH",
+          "count": 278,
+          "pct": 0.86
+        },
+        "/\u0292/": {
+          "cmu": "ZH",
+          "count": 17,
+          "pct": 0.05
+        }
+      }
+    },
+    "Fricatives (non-sibilant)": {
+      "total_count": 2590,
+      "pct_of_all": 8.0,
+      "phonemes": {
+        "/\u00f0/": {
+          "cmu": "DH",
+          "count": 1233,
+          "pct": 3.81
+        },
+        "/f/": {
+          "cmu": "F",
+          "count": 685,
+          "pct": 2.12
+        },
+        "/v/": {
+          "cmu": "V",
+          "count": 497,
+          "pct": 1.53
+        },
+        "/\u03b8/": {
+          "cmu": "TH",
+          "count": 175,
+          "pct": 0.54
+        }
+      }
+    },
+    "Affricates": {
+      "total_count": 467,
+      "pct_of_all": 1.44,
+      "phonemes": {
+        "/d\u0292/": {
+          "cmu": "JH",
+          "count": 235,
+          "pct": 0.73
+        },
+        "/t\u0283/": {
+          "cmu": "CH",
+          "count": 232,
+          "pct": 0.72
+        }
+      }
+    }
+  }
+}

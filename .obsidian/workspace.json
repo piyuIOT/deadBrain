@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "3176d13c587e4cb1",
+        "id": "0354d576ec90aed0",
         "type": "tabs",
         "children": [
           {
-            "id": "b8ee935c8fc0c2d9",
+            "id": "70bc68e1b21584d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "allConfig.pcapng.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "allConfig.pcapng"
+            }
+          },
+          {
+            "id": "959b638b16f54cb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,101 +36,35 @@
             }
           },
           {
-            "id": "5e3e0b505d003447",
+            "id": "bc3a3e0d62f3f4f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work.md",
+                "file": "piezo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Work"
+              "title": "piezo"
             }
           },
           {
-            "id": "242e95703b5c5582",
+            "id": "097dfe2ca2e5d56e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Info/Optimization thoughts.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Optimization thoughts"
-            }
-          },
-          {
-            "id": "486e7a0dfb975732",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Personel/Pass.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pass"
-            }
-          },
-          {
-            "id": "80892ee4acef2ecc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Info/Optimization thoughts.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Optimization thoughts"
-            }
-          },
-          {
-            "id": "0370c77a88cde14f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/BCM (Bone Conduction Mic).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BCM (Bone Conduction Mic)"
-            }
-          },
-          {
-            "id": "5d74fe55f9644d28",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BCM data analysis.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BCM data analysis"
-            }
-          },
-          {
-            "id": "43afab649ed01fe0",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "TODO"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -148,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pf",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 229.5
   },
   "right": {
     "id": "cf47fe1402cc5d2a",
@@ -279,53 +227,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "43afab649ed01fe0",
+  "active": "097dfe2ca2e5d56e",
   "lastOpenFiles": [
-    "BCM data analysis.md",
-    "Hardware/BCM (Bone Conduction Mic).md",
-    "Info/Optimization thoughts.md",
-    "Claude.md",
-    "README.md",
     "Work.md",
-    "Software/TEMPLE study.md",
-    "Personel/Pass.md",
-    "Hardware/Plaude pin S.md",
-    "Info/VAD (voice activity detection).md",
-    "Info/README.md",
-    "Info/assets/VAD (voice activity detection)",
-    "Info/assets",
-    "assets/VAD (voice activity detection)",
+    "TODO.md",
+    "Untitled.md",
+    "Info/assets/STmicrocontroller",
+    "Info/STmicrocontroller.md",
+    "README.md",
+    "Claude.md",
+    "allConfig.pcapng.md",
+    "DailyNotes/README.md",
+    "piezo.md",
+    "DailyNotes/2026/03/26.md",
+    "DailyNotes/template.md",
+    "DailyNotes/2026/03/25.md",
+    "DailyNotes/2026/02/05.md",
+    "DailyNotes/2026/02/02.md",
+    "DailyNotes/2026/03/24.md",
+    "DailyNotes/2026/03/23.md",
+    "DailyNotes/2026/03/21.md",
+    "DailyNotes/2026/03/20.md",
+    "DailyNotes/2026/03/19.md",
+    "DailyNotes/2026/03/18.md",
+    "DailyNotes/2026/03/17.md",
+    "DailyNotes/2026/03/16.md",
+    "DailyNotes/2026/03/14.md",
+    "DailyNotes/2026/03/13.md",
+    "DailyNotes/2026/03/12.md",
+    "DailyNotes/2026/03/11.md",
+    "DailyNotes/fill_tasks.py",
+    "DailyNotes/2026/02",
+    "DailyNotes/create_notes.sh",
+    "DailyNotes/2026/03",
+    "DailyNotes/2026",
+    "DailyNotes",
+    "Info/assets/STmicrocontroller/image_0kVUelgxRn.avif",
+    "assets/STmicrocontroller",
+    "assets",
+    "Info/stt/TIMITprompts.TXT",
     "Info/assets/VAD (voice activity detection)/file-20260314142217752.png",
     "Info/assets/VAD (voice activity detection)/IMU MLC VAD.png",
-    "assets/VAD voice activity detection",
-    "assets",
-    "Untitled 1.md",
-    "lsm6dsv16bx_signal_chain_notes.md",
-    "Personel/Safety gloves.md",
-    "feat in temple.md",
-    "Voice bot/WebSocket Audio Streaming Protocol.md",
-    "Voice bot/Untitled.md",
-    "Voice bot/Project Overview.md",
-    "Voice bot/Flowchart 2.md",
-    "Voice bot/Flowchart.md",
-    "Voice bot/Final.md",
-    "Voice bot/CLAUDE.md",
-    "Voice bot/retry/CLAUDE.md.md",
-    "Voice bot/power optimization/task.md",
-    "Voice bot/power optimization/ESP32S3.md",
-    "untitled folder/Work.md",
-    "Voice bot/power optimization/ES8311.pdf",
-    "Voice bot/power optimization/ES7210.pdf",
-    "Voice bot/power optimization/AXP2101.pdf",
-    "Voice bot/power optimization",
-    "Voice bot/retry",
     "Personel/assets/A thank you, one year and a half late/the view at chopta chandrashilla trek.jpeg",
     "Personel/assets/A thank you, one year and a half late/the last day of manali trek.jpeg",
     "Personel/assets/A thank you, one year and a half late/the lake at hemkund saheb.jpeg",
     "Personel/assets/A thank you, one year and a half late/the first day of our manali trek.jpeg",
     "Personel/assets/A thank you, one year and a half late/the beautiful valley of flowers.jpeg",
     "Personel/assets/A thank you, one year and a half late/some trees on the way back from chopta chandrashila trek.jpeg",
-    "Personel/assets/A thank you, one year and a half late/some beautiful street in masoori.jpeg",
-    "Personel/assets/A thank you, one year and a half late/playing cards at my friends apartment in dalhousie.jpeg"
+    "Personel/assets/A thank you, one year and a half late/some beautiful street in masoori.jpeg"
   ]
 }

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phoneme Frequency — STT Corpus</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0f1117; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; padding: 32px; }
+  h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 4px; color: #fff; }
+  p.sub { font-size: 0.82rem; color: #888; margin-bottom: 28px; }
+
+  .tier-bar {
+    display: flex; height: 10px; border-radius: 6px; overflow: hidden;
+    margin-bottom: 24px; gap: 2px;
+  }
+  .tier-bar div { height: 100%; border-radius: 3px; }
+
+  .legend {
+    display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 28px;
+  }
+  .legend-item {
+    display: flex; align-items: center; gap: 7px; font-size: 0.78rem; color: #aaa;
+  }
+  .legend-dot { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
+
+  .chart-wrap { position: relative; width: 100%; height: 460px; }
+
+  .stats {
+    display: flex; gap: 20px; margin-top: 28px; flex-wrap: wrap;
+  }
+  .stat {
+    background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 10px;
+    padding: 14px 20px; flex: 1; min-width: 160px;
+  }
+  .stat .val { font-size: 1.5rem; font-weight: 700; color: #fff; }
+  .stat .lbl { font-size: 0.75rem; color: #666; margin-top: 3px; }
+
+  .tier-summary {
+    display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap;
+  }
+  .tier-card {
+    flex: 1; min-width: 180px; border-radius: 10px; padding: 14px 18px;
+    border: 1px solid transparent;
+  }
+  .tier-card .pct { font-size: 1.6rem; font-weight: 700; }
+  .tier-card .name { font-size: 0.75rem; margin-top: 2px; opacity: 0.75; }
+  .tier-card .desc { font-size: 0.7rem; opacity: 0.55; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Phoneme Frequency Analysis</h1>
+<p class="sub">1,170 sentences · 32,379 phoneme tokens · 100% CMU dict coverage</p>
+
+<div class="legend" id="legend"></div>
+<div class="chart-wrap"><canvas id="chart"></canvas></div>
+
+<div class="stats">
+  <div class="stat"><div class="val">1,170</div><div class="lbl">sentences analysed</div></div>
+  <div class="stat"><div class="val">32,379</div><div class="lbl">phoneme tokens</div></div>
+  <div class="stat"><div class="val">39</div><div class="lbl">unique phonemes</div></div>
+  <div class="stat"><div class="val">100%</div><div class="lbl">CMU dict coverage</div></div>
+</div>
+
+<div class="tier-summary">
+  <div class="tier-card" style="background:#1a2a1a;border-color:#2d5a2d">
+    <div class="pct" style="color:#4caf50">54.0%</div>
+    <div class="name" style="color:#81c784">Tier 1 — Survives well</div>
+    <div class="desc" style="color:#a5d6a7">Vowels · Nasals · Voiced stops · &lt;500 Hz</div>
+  </div>
+  <div class="tier-card" style="background:#1a251a;border-color:#3a5a1a">
+    <div class="pct" style="color:#8bc34a">27.2%</div>
+    <div class="name" style="color:#aed581">Tier 2 — Partially survives</div>
+    <div class="desc" style="color:#c5e1a5">Stops · Liquids · Glides · 500–1,500 Hz</div>
+  </div>
+  <div class="tier-card" style="background:#2a1a1a;border-color:#5a2a1a">
+    <div class="pct" style="color:#ff7043">18.7%</div>
+    <div class="name" style="color:#ff8a65">Tier 3 — Degraded / lost</div>
+    <div class="desc" style="color:#ffab91">Fricatives · Affricates · &gt;1,500 Hz</div>
+  </div>
+</div>
+
+<script>
+const GROUPS = {
+  "Vowels":                    { color: "#5c85d6" },
+  "Nasal consonants":          { color: "#4caf50" },
+  "Voiced stops":              { color: "#66bb6a" },
+  "Unvoiced stops":            { color: "#8bc34a" },
+  "Liquids":                   { color: "#26c6da" },
+  "Glides":                    { color: "#00bcd4" },
+  "Fricatives (sibilant)":     { color: "#ff7043" },
+  "Fricatives (non-sibilant)": { color: "#ef5350" },
+  "Affricates":                { color: "#c62828" },
+};
+
+const RAW = [
+  { ph:"/ʌ/",  cnt:3146, grp:"Vowels" },
+  { ph:"/ɪ/",  cnt:1556, grp:"Vowels" },
+  { ph:"/i/",  cnt:978,  grp:"Vowels" },
+  { ph:"/ɑ/",  cnt:783,  grp:"Vowels" },
+  { ph:"/ɛ/",  cnt:783,  grp:"Vowels" },
+  { ph:"/ɜr/", cnt:759,  grp:"Vowels" },
+  { ph:"/æ/",  cnt:727,  grp:"Vowels" },
+  { ph:"/ɔ/",  cnt:623,  grp:"Vowels" },
+  { ph:"/u/",  cnt:614,  grp:"Vowels" },
+  { ph:"/eɪ/", cnt:587,  grp:"Vowels" },
+  { ph:"/aɪ/", cnt:573,  grp:"Vowels" },
+  { ph:"/oʊ/", cnt:454,  grp:"Vowels" },
+  { ph:"/aʊ/", cnt:211,  grp:"Vowels" },
+  { ph:"/ʊ/",  cnt:147,  grp:"Vowels" },
+  { ph:"/ɔɪ/", cnt:71,   grp:"Vowels" },
+  { ph:"/n/",  cnt:1921, grp:"Nasal consonants" },
+  { ph:"/m/",  cnt:823,  grp:"Nasal consonants" },
+  { ph:"/ŋ/",  cnt:284,  grp:"Nasal consonants" },
+  { ph:"/d/",  cnt:1412, grp:"Voiced stops" },
+  { ph:"/b/",  cnt:671,  grp:"Voiced stops" },
+  { ph:"/g/",  cnt:372,  grp:"Voiced stops" },
+  { ph:"/t/",  cnt:2200, grp:"Unvoiced stops" },
+  { ph:"/k/",  cnt:1213, grp:"Unvoiced stops" },
+  { ph:"/p/",  cnt:839,  grp:"Unvoiced stops" },
+  { ph:"/r/",  cnt:1720, grp:"Liquids" },
+  { ph:"/l/",  cnt:1497, grp:"Liquids" },
+  { ph:"/w/",  cnt:711,  grp:"Glides" },
+  { ph:"/h/",  cnt:400,  grp:"Glides" },
+  { ph:"/j/",  cnt:241,  grp:"Glides" },
+  { ph:"/s/",  cnt:1661, grp:"Fricatives (sibilant)" },
+  { ph:"/z/",  cnt:1050, grp:"Fricatives (sibilant)" },
+  { ph:"/ʃ/",  cnt:278,  grp:"Fricatives (sibilant)" },
+  { ph:"/ʒ/",  cnt:17,   grp:"Fricatives (sibilant)" },
+  { ph:"/ð/",  cnt:1233, grp:"Fricatives (non-sibilant)" },
+  { ph:"/f/",  cnt:685,  grp:"Fricatives (non-sibilant)" },
+  { ph:"/v/",  cnt:497,  grp:"Fricatives (non-sibilant)" },
+  { ph:"/θ/",  cnt:175,  grp:"Fricatives (non-sibilant)" },
+  { ph:"/dʒ/", cnt:235,  grp:"Affricates" },
+  { ph:"/tʃ/", cnt:232,  grp:"Affricates" },
+];
+
+// Sort by group order then count desc (group order kept)
+const labels  = RAW.map(r => r.ph);
+const counts  = RAW.map(r => r.cnt);
+const colors  = RAW.map(r => GROUPS[r.grp].color);
+const total   = counts.reduce((a,b)=>a+b,0);
+
+// Legend
+const legendEl = document.getElementById('legend');
+Object.entries(GROUPS).forEach(([name, {color}]) => {
+  const item = document.createElement('div');
+  item.className = 'legend-item';
+  item.innerHTML = `<div class="legend-dot" style="background:${color}"></div>${name}`;
+  legendEl.appendChild(item);
+});
+
+// Chart
+const ctx = document.getElementById('chart').getContext('2d');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels,
+    datasets: [{
+      data: counts,
+      backgroundColor: colors,
+      borderRadius: 4,
+      borderSkipped: false,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          title: (items) => {
+            const i = items[0].dataIndex;
+            return `${RAW[i].ph}  —  ${RAW[i].grp}`;
+          },
+          label: (item) => {
+            const pct = (item.raw / total * 100).toFixed(2);
+            return ` ${item.raw.toLocaleString()} tokens  (${pct}%)`;
+          }
+        },
+        backgroundColor: '#1e2130',
+        borderColor: '#3a3d50',
+        borderWidth: 1,
+        titleColor: '#fff',
+        bodyColor: '#aaa',
+        padding: 10,
+      }
+    },
+    scales: {
+      x: {
+        grid: { color: '#1e2130' },
+        ticks: { color: '#aaa', font: { size: 12, family: 'monospace' } },
+      },
+      y: {
+        grid: { color: '#1e2130' },
+        ticks: { color: '#888', font: { size: 11 } },
+        title: {
+          display: true,
+          text: 'Token count',
+          color: '#666',
+          font: { size: 12 }
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

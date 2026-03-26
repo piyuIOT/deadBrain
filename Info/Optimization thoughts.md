@@ -9,3 +9,8 @@ cheating with bone conduction microphone, as no one else is picked up from it?
 listening through doors and walls?
 AQI? https://www.bosch-sensortec.com/en/products/environmental-sensors/gas-sensors/bme690
 detect sleep walk??
+
+help keyword spotting : Police + emergency contact
+ambulance keyword spotting : blinkit ambulance
+
+
