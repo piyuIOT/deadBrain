@@ -44,6 +44,7 @@ for (const key of Object.keys(noteMap).sort()) {
 }
 
 (async () => {
+    dv.header(1, "INDEX");
     for (const ym of Object.keys(groupedYM).sort()) {
         const [year, month] = ym.split('/');
         const mi = parseInt(month) - 1, yr = parseInt(year);

@@ -1,4 +1,47 @@
 Hardware documentation including hardware choices, integration docs, spec sheets, and pin mappings.
-# INDEX
-1. [Audio recorder](Audio%20recorder/README.md)
-2. [SD card pinout (SD, SPI mode)](SD%20card%20pinout%20(SD,%20SPI%20mode).md)
+
+---
+
+```dataviewjs
+const EXCLUDE = new Set(['README', 'CLAUDE']);
+
+const folder = dv.current().file.folder;
+const pages  = dv.pages(`"${folder}"`)
+    .where(p => !EXCLUDE.has(p.file.name.replace(/\.md$/, '').toUpperCase()))
+    .array();
+
+// Build recursive tree from file paths
+const tree = {};
+for (const p of pages) {
+    const parts = p.file.path.replace(folder + '/', '').split('/');
+    let node = tree;
+    for (let i = 0; i < parts.length - 1; i++) {
+        node[parts[i]] = node[parts[i]] || {};
+        node = node[parts[i]];
+    }
+    (node._files = node._files || []).push(p);
+}
+
+function renderTree(node, depth, path) {
+    let md = '';
+    const indent = '\t'.repeat(depth);
+
+    // Files first, alphabetical
+    for (const p of (node._files || []).sort((a, b) => a.file.name.localeCompare(b.file.name)))
+        md += `${indent}- **[[${p.file.path}|${p.file.name.replace(/\.md$/, '')}]]**\n`;
+
+    // Then subfolders, alphabetical
+    for (const sf of Object.keys(node).filter(k => k !== '_files').sort()) {
+        const sfPath = `${path}/${sf}`;
+        const hasReadme = app.vault.getAbstractFileByPath(`${sfPath}/README.md`) !== null;
+        const sfLabel = hasReadme ? `**[[${sfPath}/README|${sf}]]**` : `**${sf}**`;
+        md += `${indent}- ${sfLabel}\n`;
+        md += renderTree(node[sf], depth + 1, sfPath);
+    }
+
+    return md;
+}
+
+dv.header(1, "INDEX");
+dv.paragraph(renderTree(tree, 0, folder));
+```

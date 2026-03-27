@@ -8,6 +8,7 @@
 - Use headers to separate functional sections, not paragraphs of explanation.
 - Include exact part numbers, protocol names, and pin assignments. No vague descriptions.
 - Don't explain what's obvious from context. Only annotate where behaviour is non-obvious.
+- Do not use /n in mermaid diagrams, it is not supported
 
 ---
 # Vault Organization
@@ -22,3 +23,16 @@
 - Encode spaces as `%20` in link paths: `[Git doc](Info/Git/Git%20doc.md)`
 - Cross-reference related notes explicitly in a `# Resources` section at the top
 - External resources (datasheets, wikis, schematics) also go in `# Resources`
+## Daily Notes
+- Location: `DailyNotes/YYYY/MM/DD.md`
+- Index: `DailyNotes/README.md` — dataviewjs, auto-reads all notes, do not edit manually
+- Template: `DailyNotes/template.md`
+- Scripts: `DailyNotes/create_notes.sh` (create blank notes for a date range), `DailyNotes/fill_tasks.py` (backfill tasks from Work.md)
+- One note per working day; weekends included if work was done
+- Note structure (in order, no frontmatter):
+  1. `# Misc` — scratchpad, anything
+  2. `# Tasks` — what was done
+  3. `# Issues & Observations` — bugs, anomalies
+  4. `# Notes` — knowledge, reasoning, learnings; use sub-headers freely
+  5. `# Conclusion` — single blockquote, key takeaway
+- Work.md one-liners are the source of truth for task entries in old notes

@@ -4,53 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "0354d576ec90aed0",
+        "id": "9bf35219c695364f",
         "type": "tabs",
         "children": [
           {
-            "id": "70bc68e1b21584d3",
+            "id": "6d98fa151e2a023f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "allConfig.pcapng.md",
+                "file": "DailyNotes/2026/03/26.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "allConfig.pcapng"
+              "title": "26"
             }
           },
           {
-            "id": "959b638b16f54cb8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/BCM (Bone Conduction Mic).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BCM (Bone Conduction Mic)"
-            }
-          },
-          {
-            "id": "bc3a3e0d62f3f4f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "piezo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "piezo"
-            }
-          },
-          {
-            "id": "097dfe2ca2e5d56e",
+            "id": "51cc1f088e5b12e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -62,9 +34,71 @@
               "icon": "lucide-file",
               "title": "TODO"
             }
+          },
+          {
+            "id": "ab3cbb19ac091e7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Info/Edge AI vendor comparison.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Edge AI vendor comparison"
+            }
+          },
+          {
+            "id": "d669c49dc1a98054",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Info/Edge AI — Neural Networks & DSP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Edge AI — Neural Networks & DSP"
+            }
+          },
+          {
+            "id": "a3e44cc04c509430",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DailyNotes/2026/03/27.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "27"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
+      },
+      {
+        "id": "b8b3ae1fecc7cfd1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22ef9c9210add323",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Infineon PSOC E84 AI devkit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Infineon PSOC E84 AI devkit"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,47 +261,47 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "097dfe2ca2e5d56e",
+  "active": "a3e44cc04c509430",
   "lastOpenFiles": [
-    "Work.md",
-    "TODO.md",
-    "Untitled.md",
-    "Info/assets/STmicrocontroller",
-    "Info/STmicrocontroller.md",
-    "README.md",
-    "Claude.md",
-    "allConfig.pcapng.md",
-    "DailyNotes/README.md",
-    "piezo.md",
+    "Infineon PSOC E84 AI devkit.md",
+    "DailyNotes/2026/03/27.md",
+    "DevKit.md",
+    "Info/Edge AI — Neural Networks & DSP.md",
     "DailyNotes/2026/03/26.md",
-    "DailyNotes/template.md",
+    "Info/Edge AI — ML Concepts.md",
+    "Info/Edge AI vendor comparison.md",
     "DailyNotes/2026/03/25.md",
+    "TODO.md",
+    "Claude.md",
+    "DailyNotes/README.md",
+    "DailyNotes/template.md",
+    "DailyNotes/2026/02/25.md",
+    "DailyNotes/2026/02/12.md",
+    "DailyNotes/2026/02/06.md",
     "DailyNotes/2026/02/05.md",
-    "DailyNotes/2026/02/02.md",
-    "DailyNotes/2026/03/24.md",
-    "DailyNotes/2026/03/23.md",
-    "DailyNotes/2026/03/21.md",
-    "DailyNotes/2026/03/20.md",
-    "DailyNotes/2026/03/19.md",
-    "DailyNotes/2026/03/18.md",
-    "DailyNotes/2026/03/17.md",
-    "DailyNotes/2026/03/16.md",
-    "DailyNotes/2026/03/14.md",
-    "DailyNotes/2026/03/13.md",
-    "DailyNotes/2026/03/12.md",
-    "DailyNotes/2026/03/11.md",
+    "DailyNotes/2026/02/28.md",
+    "DailyNotes/2026/02/24.md",
+    "DailyNotes/2026/02/16.md",
+    "DailyNotes/2026/02/03.md",
+    "DailyNotes/2026/02/11.md",
+    "README.md",
+    "Hardware/README.md",
+    "Hardware/BCM/README.md",
+    "Hardware/Audio recorder/README.md",
+    "Info/voice/README.md",
+    "Software/MLC/assets/VAD (voice activity detection)",
+    "Software/MLC/assets/STmicrocontroller",
+    "Software/MLC/assets",
+    "Software/MLC",
+    "Info/voice/TRAMBA.pdf",
+    "Hardware/BCM",
+    "Info/assets/STmicrocontroller",
     "DailyNotes/fill_tasks.py",
     "DailyNotes/2026/02",
     "DailyNotes/create_notes.sh",
-    "DailyNotes/2026/03",
-    "DailyNotes/2026",
-    "DailyNotes",
-    "Info/assets/STmicrocontroller/image_0kVUelgxRn.avif",
-    "assets/STmicrocontroller",
-    "assets",
-    "Info/stt/TIMITprompts.TXT",
-    "Info/assets/VAD (voice activity detection)/file-20260314142217752.png",
-    "Info/assets/VAD (voice activity detection)/IMU MLC VAD.png",
+    "Software/MLC/assets/STmicrocontroller/image_0kVUelgxRn.avif",
+    "Software/MLC/assets/VAD (voice activity detection)/file-20260314142217752.png",
+    "Software/MLC/assets/VAD (voice activity detection)/IMU MLC VAD.png",
     "Personel/assets/A thank you, one year and a half late/the view at chopta chandrashilla trek.jpeg",
     "Personel/assets/A thank you, one year and a half late/the last day of manali trek.jpeg",
     "Personel/assets/A thank you, one year and a half late/the lake at hemkund saheb.jpeg",

@@ -1,15 +1,15 @@
 # Misc
--
+- 
 
 ---
 
 # Tasks
--
+- 
 
 ---
 
 # Issues & Observations
--
+- 
 
 ---
 

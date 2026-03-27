@@ -1,0 +1,2 @@
+OYY TEMPLE	
+OY IY T EH M P AH L
