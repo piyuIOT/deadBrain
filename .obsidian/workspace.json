@@ -8,94 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6d98fa151e2a023f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DailyNotes/2026/03/26.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "26"
-            }
-          },
-          {
-            "id": "51cc1f088e5b12e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TODO"
-            }
-          },
-          {
-            "id": "ab3cbb19ac091e7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Info/Edge AI vendor comparison.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Edge AI vendor comparison"
-            }
-          },
-          {
             "id": "d669c49dc1a98054",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Info/Edge AI — Neural Networks & DSP.md",
+                "file": "Hardware/Edge AI — Neural Networks & DSP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Edge AI — Neural Networks & DSP"
-            }
-          },
-          {
-            "id": "a3e44cc04c509430",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DailyNotes/2026/03/27.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "27"
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "b8b3ae1fecc7cfd1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "22ef9c9210add323",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Infineon PSOC E84 AI devkit.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Infineon PSOC E84 AI devkit"
             }
           }
         ]
@@ -261,19 +184,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3e44cc04c509430",
+  "active": "d669c49dc1a98054",
   "lastOpenFiles": [
-    "Infineon PSOC E84 AI devkit.md",
     "DailyNotes/2026/03/27.md",
-    "DevKit.md",
-    "Info/Edge AI — Neural Networks & DSP.md",
-    "DailyNotes/2026/03/26.md",
-    "Info/Edge AI — ML Concepts.md",
-    "Info/Edge AI vendor comparison.md",
-    "DailyNotes/2026/03/25.md",
-    "TODO.md",
-    "Claude.md",
     "DailyNotes/README.md",
+    "DailyNotes/2026/03/28.md",
+    "Hardware/Edge AI — Neural Networks & DSP.md",
+    "Infineon PSOC E84 AI devkit.md",
+    "TODO.md",
+    "DailyNotes/2026/03/26.md",
+    "Info/Edge AI vendor comparison.md",
+    "DevKit.md",
+    "Info/Edge AI — ML Concepts.md",
+    "DailyNotes/2026/03/25.md",
+    "Claude.md",
     "DailyNotes/template.md",
     "DailyNotes/2026/02/25.md",
     "DailyNotes/2026/02/12.md",
@@ -288,7 +212,6 @@
     "Hardware/README.md",
     "Hardware/BCM/README.md",
     "Hardware/Audio recorder/README.md",
-    "Info/voice/README.md",
     "Software/MLC/assets/VAD (voice activity detection)",
     "Software/MLC/assets/STmicrocontroller",
     "Software/MLC/assets",

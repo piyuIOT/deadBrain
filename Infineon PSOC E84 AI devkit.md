@@ -21,18 +21,18 @@
 			- [Voice assistant demo video](https://www.youtube.com/watch?v=hAXSKi1HxYU)
 			- [Audio Enhancement demo video](https://www.youtube.com/watch?v=kS_WzyXqUTI)
 # Toolchain
-
-
-- [modusToolbox](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software) for programming, debugging, flashing etc (available as vscode extension as well, toolbox contains a lot more application for various individual tasks)
-- [Deepcraft AI studio](https://www.infineon.com/design-resources/embedded-software/deepcraft-edge-ai-solutions/deepcraft-studio) (windows only) which is for machine learning model creation, conversion, optimisation. (Youtube playlist)
+- [modusToolbox](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software) for programming, debugging, flashing etc (available as [vscode extension](https://www.infineon.com/assets/row/public/documents/30/44/infineon-visual-studio-code-user-guide-usermanual-en.pdf) as well, toolbox contains a lot more application for various individual tasks)
+- [Deepcraft AI studio](https://www.infineon.com/design-resources/embedded-software/deepcraft-edge-ai-solutions/deepcraft-studio) (windows only) which is for machine learning model creation, conversion, optimisation. ([Youtube playlist](https://www.youtube.com/playlist?list=PLysiXCSXeNEXMF6yFXQ3CSVzXAPzBHoCc), and [documentation](https://developer.imagimob.com/deepcraft-studio/getting-started/machine-learning-algorithms))
+- [All in 1 youtube video by Infineon software dev](https://www.youtube.com/watch?v=EH95kiN6x7s)
 # Programming
 - [Primary library](https://github.com/Infineon/TARGET_KIT_PSE84_AI)
 - Learning resources basic programming:
 	- [Overview](https://github.com/Infineon/mtb-training-psoc-edge-e84-introduction)
 	- [Basic blink code](https://github.com/Infineon/mtb-training-psoc-edge-e84-intro-ecosystem)
 	- [Deep dive into features](https://github.com/Infineon/mtb-training-psoc-edge-e84-features)
-	- 
+		- [Especially ML](https://github.com/Infineon/mtb-training-psoc-edge-e84-features/blob/main/Manual/PSE84_Technical_intro_features_Training_manual_Ch7_MachineLearning.pdf)
 # MISC
+- [For pretrained neural net using modusToolkit](https://github.com/Infineon/mtb-example-ml-profiler)
 - [Github infineon wakeword word and command detection model](https://github.com/Infineon/mtb-example-psoc6-dual-cpu-cyberon-freertos?tab=readme-ov-file)
 - [Live remote hardware testing lab](https://infineon-live-lab.tenxerlabs.com/app/psoc-edge-e84)
 - [Deepcraft AI hub](https://deepcraft.infineon.com/)
