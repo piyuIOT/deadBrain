@@ -26,6 +26,7 @@
 - [All in 1 youtube video by Infineon software dev](https://www.youtube.com/watch?v=EH95kiN6x7s)
 # Programming
 - [Primary library](https://github.com/Infineon/TARGET_KIT_PSE84_AI)
+- [Code example repo Infineon](https://github.com/Infineon/Code-Examples-for-ModusToolbox-Software?tab=readme-ov-file)
 - Learning resources basic programming:
 	- [Overview](https://github.com/Infineon/mtb-training-psoc-edge-e84-introduction)
 	- [Basic blink code](https://github.com/Infineon/mtb-training-psoc-edge-e84-intro-ecosystem)
